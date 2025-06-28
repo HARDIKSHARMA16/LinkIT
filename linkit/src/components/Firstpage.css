@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kanit:wght@300;500&family=Poppins&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100%;
+  max-width: 100vw;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.hero {
+  background-color: rgba(0, 0, 0, 0.952);
+  position: relative;
+  z-index: 1;
+  margin-top: 50px;
+}
+  
+
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-heading {
+  font-family: "Poppins", sans-serif;
+  font-size: 2.75rem;
+  color: rgb(157, 0, 255);
+  padding: 0.5rem 2rem;
+  text-align: center;
+  /* margin-top: 12rem; */
+}
+
+.hero-subheading {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  font-size: 50px;
+  color: #fff;
+  padding: 0.2rem;
+  margin-top: 12rem;
+}
+
+.hero__description {
+  color: #ffffffc6;
+  padding: 0.5rem 4rem 0.5rem 4rem;
+  max-width: 46em;
+  color:yellow;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.hero-button {
+  background: linear-gradient(
+ 90deg,
+rgb(93, 1, 251) 0.18%,
+rgba(129, 6, 121, 0.98) 99.9%
+
+  );
+  border: 2px solid #ffffff;
+  border-radius: 1.25rem;
+  margin-top: 1.5rem;
+  padding: 1.2rem 2.5rem;
+  cursor: pointer;
+  margin-bottom: 12rem;
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+  transform: scale(1); /* Default scale */
+}
+
+.hero-button:hover {
+  transform: scale(1.08); 
+  border-color: #ffffff;
+}
+
+.hero-button-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-heading {
+    font-size: 2.5rem;
+    margin-top: 100px;
+  }
+  .hero-subheading {
+    font-size: 1.5rem;
+  }
+  .hero__description {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-heading {
+    font-size: 1.3rem;
+    margin-top: 90px;
+  }
+  .hero-subheading {
+    font-size: 1.2rem;
+    color: yellow;
+  }
+  .hero__description {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-heading {
+    font-size: 1.3rem;
+    margin-top: 90px;
+  }
+  .hero-subheading {
+    font-size: 1.2rem;
+    color: yellow;
+  }
+  .hero__description {
+    font-size: 1rem;
+  }
+}
+
+/* animate-section */
+.animate-section {
+  background-color: #000000;
+}
+
+.animate-heading {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2rem;
+  color: rgb(255, 0, 191);
+  text-align: center;
+  margin-top: 1.75rem;
+  padding: 1.5rem 3rem;
+}
+
+.animate-para {
+  color: #ffffffc6;
+  padding: 0rem 2rem 5rem 2rem;
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  margin: auto;
+  margin-top: 10px;
+  text-align: center;
+  max-width: 80vw;
+}
+
+/* product-section */
+.product-section {
+  color: #ffffff;
+  background-color: rgba(0, 0, 0, 0.952);
+  margin-bottom: 100px;
+}
+
+.product-head {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin-top: 30px;
+  font-size: 2rem;
+  color: rgb(255, 0, 191);
+  padding: 1rem;
+  text-align: center;
+}
+
+.product-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  max-width: 90%;
+}
+
+.product-left{
+display: flex;
+flex-direction: row;
+margin-top: 1rem;
+}
+
+.my-hr {
+  border: none;
+  height: 0.2em;
+  background-color: #ffffff;
+  margin: 2.5%;
+}
+
+.Para-1,
+.Para-2,
+.Para-3 {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1%;
+  margin-left: 2%;
+  max-width: 80em;
+}
+
+.para1-heading,
+.para2-heading,
+.para3-heading {
+  font-size: 1.6rem;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  cursor: pointer;
+}
+
+.para1-detail,
+.para2-detail,
+.para3-detail {
+  font-size: 1.2rem;
+  margin-top: 1%;
+  color: rgb(255, 255, 11);
+  text-align: inherit;
+  font-family: "Nunito", sans-serif;
+}
+
+.product-right{
+  max-width: 40%;
+  margin:auto;
+}
+.product-right img {
+  margin-left: 200px;
+  align-items: center;
+  height:300px;
+  width:300px;
+  object-fit: fill;
+  overflow: hidden;
+}
+
+
+/* about-section */
+.about {
+  background-color: rgba(0, 0, 0, 0.952);
+}
+
+.about-heading {
+  margin-top: 30px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 2rem;
+  padding: 1rem 2rem 0 2rem;
+  color:  rgb(255, 0, 191);
+  text-align: center;
+}
+
+.about-text {
+  color: rgb(255, 255, 255);
+  font-family: "Nunito", sans-serif;
+  font-size: 1.5rem;
+  padding: 1rem 2rem 3rem 2rem;
+  max-width: 80%;
+  text-align: center;
+  margin: auto;
+}
+
+/* footer-section */
+.footer-section {
+  background: rgba(0, 0, 0, 0.959);
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.column1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.column1-heading {
+  font-size: 2rem;
+  font-family: "Nunito", sans-serif;
+  padding: 0.5rem;
+  color: rgb(255, 0, 191);
+}
+
+.column1-para {
+  font-size: 1.6rem;
+  font-family: "Nunito", sans-serif;
+  margin: 0 3rem 0 3rem;
+}
+
+.column2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.column2-text {
+  font-size: 2rem;
+  padding: 0.5rem;
+  font-family: "Nunito", sans-serif;
+  color: rgb(255, 0, 191);
+}
+
+.social-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 3rem 0 3rem;
+}
+
+.Column3 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.Column3-text {
+  margin-top: 2.5rem;
+  padding: 1.5rem 3rem 1rem 0rem;
+  font-size: 1.5rem;
+  color: rgb(255, 0, 191);
+  font-family: "Nunito", sans-serif;
+}
+
+  
